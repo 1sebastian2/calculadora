@@ -1,6 +1,6 @@
 // ---------- Constantes ----------
 const PESO_SACO_CEMENTO = 50;
-const DESPERDICIO = 1.10;
+const DESPERDICIO = 1.05;
 
 // Tabla de dosificación por m³: c = cemento (kg), a = arena (m³), g = grava (m³), w = agua (L)
 const DOSIFICACIONES = {
