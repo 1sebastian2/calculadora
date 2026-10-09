@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculadora de Concreto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="w">
+    <h1>🏗️ Calculadora de Concreto</h1>
+    
+
+    <div class="c">
+      <label for="psi">Resistencia</label>
+      <select id="psi"></select>
+
+      <label for="tipo">Tipo de elemento</label>
+      <select id="tipo"></select>
+
+      <div class="g" id="campos"></div>
+      <div class="err" id="err"></div>
+      <button id="add">+ Agregar elemento</button>
+    </div>
+
+    <div class="c">
+      <b>Elementos agregados</b>
+      <div id="lista"></div>
+      <button id="calc">Calcular materiales</button>
+      <button class="sec" id="clr">Limpiar todo</button>
+    </div>
+
+    <div class="c" id="res" style="display:none"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
