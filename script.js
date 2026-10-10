@@ -1,6 +1,6 @@
 // ---------- Constantes ----------
 const PESO_SACO_CEMENTO = 50;
-const DESPERDICIO = 1.00;
+const DESPERDICIO = 1.05;
 
 // Tabla de dosificación por m³: c = cemento (kg), a = arena (m³), g = grava (m³), w = agua (L)
 const DOSIFICACIONES = {
@@ -10,12 +10,12 @@ const DOSIFICACIONES = {
   3000: { c: 320, a: 0.52, g: 0.90, w: 170 },
   2850: { c: 300, a: 0.48, g: 0.95, w: 158 },
   2700: { c: 280, a: 0.55, g: 0.89, w: 158 },
-  2400: { c: 240, a: 0.60, g: 0.85, w: 158 },
-  2275: { c: 260, a: 0.63, g: 0.83, w: 160 },
+  2400: { c: 300, a: 0.72, g: 0.72, w: 158 },
+  2275: { c: 260, a: 0.63, g: 0.83, w: 163 },
   2000: { c: 230, a: 0.55, g: 0.92, w: 148 },
-  1700: { c: 210, a: 0.50, g: 1.00, w: 143 },
+  1700: { c: 110, a: 0.50, g: 0.90, w: 143 },
   1560: { c: 175, a: 0.55, g: 0.98, w: 133 },
-  1420: { c: 160, a: 0.55, g: 1.03, w: 125 }
+  1420: { c: 160, a: 0.55, g: 0.03, w: 125 }
 };
 
 // Tipos de elemento: nombre, campos y fórmula del volumen (m³)
@@ -137,7 +137,7 @@ function calcular() {
   $("res").innerHTML =
     "<b>Resultados</b>" +
     fila("Volumen neto", volumenNeto.toFixed(2) + " m³") +
-    fila("Volumen con desperdicio (5 %)", volumenTotal.toFixed(2) + " m³") +
+    fila("Volumen con desperdicio (10 %)", volumenTotal.toFixed(2) + " m³") +
     fila("Resistencia", $("psi").value + " PSI") +
     fila("Sacos de cemento de 50 kg", sacos.toFixed(1)) +
     fila("Arena", arena.toFixed(2) + " m³") +
