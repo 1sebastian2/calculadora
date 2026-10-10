@@ -137,7 +137,7 @@ function calcular() {
   $("res").innerHTML =
     "<b>Resultados</b>" +
     fila("Volumen neto", volumenNeto.toFixed(2) + " m³") +
-    
+    fila("Volumen con desperdicio (5 %)", volumenTotal.toFixed(2) + " m³") +
     fila("Resistencia", $("psi").value + " PSI") +
     fila("Sacos de cemento de 50 kg", sacos.toFixed(1)) +
     fila("Arena", arena.toFixed(2) + " m³") +
