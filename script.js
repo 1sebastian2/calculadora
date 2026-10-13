@@ -27,7 +27,7 @@ const TIPOS = {
   },
   colr: {
     nombre: "Columna rectangular",
-    campos: ["Base (cm)", "Ancho (cm)", "Altura (m)"],
+    campos: ["Lado_1 (cm)", "Lado_2 (cm)", "Altura (m)"],
     volumen: (a) => (a[0] / 100) * (a[1] / 100) * a[2]
   },
   colc: {
@@ -37,7 +37,7 @@ const TIPOS = {
   },
   viga: {
     nombre: "Viga",
-    campos: ["Base (cm)", "Altura (cm)", "Largo (m)"],
+    campos: ["Lado_1 (cm)", "Lado_2 (cm)", "Largo (m)"],
     volumen: (a) => (a[0] / 100) * (a[1] / 100) * a[2]
   }
 };
