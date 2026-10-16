@@ -2,6 +2,23 @@
 const PESO_SACO_CEMENTO = 50;
 const DESPERDICIO = 1.05;
 
+
+const TABLA_DISTRIBUCION_HIERRO = {
+  terreno: {
+    nombre: "Losa sobre el terreno",
+    requiereDiseno: true,
+    mensaje:
+      "El refuerzo debe definirse según el suelo, las cargas y el diseño de la losa."
+  },
+  elevada: {
+    nombre: "Losa elevada",
+    requiereDiseno: true,
+    mensaje:
+      "El refuerzo debe definirse mediante un diseño estructural que considere apoyos, luces y cargas."
+  }
+};
+
+
 // Tabla de dosificación por m³: c = cemento (kg), a = arena (m³), g = grava (m³), w = agua (L)
 const DOSIFICACIONES = {
   4000: { c: 420, a: 0.67, g: 0.67, w: 190 },
