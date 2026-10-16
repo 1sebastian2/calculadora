@@ -179,3 +179,19 @@ $("tipo").addEventListener("change", mostrarCampos);
 $("add").addEventListener("click", agregar);
 $("calc").addEventListener("click", calcular);
 $("clr").addEventListener("click", limpiarTodo);
+
+function consultarTablaHierro() {
+  const tipo = document.getElementById("tipoLosa");
+  const resultado = document.getElementById("mensajeHierro");
+
+  if (!tipo || !resultado) return;
+
+  const datos = TABLA_DISTRIBUCION_HIERRO[tipo.value];
+
+  if (!datos) {
+    resultado.textContent = "Selecciona un tipo de losa.";
+    return;
+  }
+
+  resultado.textContent = datos.mensaje;
+}
