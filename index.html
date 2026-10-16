@@ -33,6 +33,7 @@
     <div class="c" id="res" style="display:none"></div>
   </div>
    
+  
 <div class="c">
   <h2>Distribución de hierro</h2>
 
@@ -42,12 +43,22 @@
     <option value="elevada">Losa elevada</option>
   </select>
 
+  <label for="largoLosa">Largo de la losa (m)</label>
+  <input id="largoLosa" type="number" min="0.01" step="any" placeholder="Ej. 12">
+
+  <label for="anchoLosa">Ancho de la losa (m)</label>
+  <input id="anchoLosa" type="number" min="0.01" step="any" placeholder="Ej. 7">
+
+  <label for="usoLosa">Uso de la losa</label>
+  <input id="usoLosa" placeholder="Ej. patio, bodega o vivienda">
+
   <button type="button" onclick="consultarTablaHierro()">
     Consultar criterios
   </button>
 
   <p id="mensajeHierro"></p>
 </div>
+
 
   <script src="script.js"></script>
 </body>
